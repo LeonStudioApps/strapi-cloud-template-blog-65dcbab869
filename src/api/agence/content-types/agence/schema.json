@@ -13,6 +13,57 @@
   "attributes": {
     "Nom": {
       "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "agence",
+        "filiale"
+      ]
+    },
+    "Slug": {
+      "type": "uid"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Adresse": {
+      "type": "string"
+    },
+    "Telephone": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Site": {
+      "type": "string"
+    },
+    "Video": {
+      "type": "string"
+    },
+    "VideoThumb": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Latitude": {
+      "type": "decimal"
+    },
+    "Longitude": {
+      "type": "decimal"
     }
   }
 }

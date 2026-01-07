@@ -470,20 +470,33 @@ export interface ApiAgenceAgence extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Adresse: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Description: Schema.Attribute.Text;
+    Latitude: Schema.Attribute.Decimal;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::agence.agence'
     > &
       Schema.Attribute.Private;
+    Logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Longitude: Schema.Attribute.Decimal;
     Nom: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    Site: Schema.Attribute.String;
+    Slug: Schema.Attribute.UID;
+    Telephone: Schema.Attribute.String;
+    Type: Schema.Attribute.Enumeration<['agence', 'filiale']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Video: Schema.Attribute.String;
+    VideoThumb: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
