@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agences",
+  "info": {
+    "singularName": "agence",
+    "pluralName": "agences",
+    "displayName": "Agences"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    }
+  }
+}
