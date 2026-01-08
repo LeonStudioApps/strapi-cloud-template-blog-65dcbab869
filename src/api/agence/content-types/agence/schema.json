@@ -11,20 +11,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nom": {
+    "title": {
       "type": "string"
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "agence",
         "filiale"
       ]
     },
-    "Slug": {
+    "slug": {
       "type": "uid"
     },
-    "Logo": {
+    "logo": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -34,22 +34,22 @@
         "audios"
       ]
     },
-    "Adresse": {
+    "adresse": {
       "type": "string"
     },
-    "Telephone": {
+    "telephone": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "Site": {
+    "site": {
       "type": "string"
     },
-    "Video": {
+    "video": {
       "type": "string"
     },
-    "VideoThumb": {
+    "video_thumb": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -59,10 +59,10 @@
         "audios"
       ]
     },
-    "Latitude": {
+    "latitude": {
       "type": "decimal"
     },
-    "Longitude": {
+    "longitude": {
       "type": "decimal"
     }
   }

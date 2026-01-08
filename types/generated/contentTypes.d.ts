@@ -470,31 +470,31 @@ export interface ApiAgenceAgence extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Adresse: Schema.Attribute.String;
+    adresse: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Description: Schema.Attribute.Text;
-    Latitude: Schema.Attribute.Decimal;
+    description: Schema.Attribute.Text;
+    latitude: Schema.Attribute.Decimal;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::agence.agence'
     > &
       Schema.Attribute.Private;
-    Logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Longitude: Schema.Attribute.Decimal;
-    Nom: Schema.Attribute.String;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    longitude: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
-    Site: Schema.Attribute.String;
-    Slug: Schema.Attribute.UID;
-    Telephone: Schema.Attribute.String;
-    Type: Schema.Attribute.Enumeration<['agence', 'filiale']>;
+    site: Schema.Attribute.String;
+    slug: Schema.Attribute.UID;
+    telephone: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['agence', 'filiale']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Video: Schema.Attribute.String;
-    VideoThumb: Schema.Attribute.Media<
+    video: Schema.Attribute.String;
+    video_thumb: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
   };
